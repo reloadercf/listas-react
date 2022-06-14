@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import Lista from './componets/ListaPeliculas'
+import ListaPais from './componets/ListaPais'
+
 import './App.css';
+import { ListaComida } from './componets/listacomida/ListaComida';
 
 function App() {
+  const paises = ['Dinamarca', 'Mexico', 'Colombia', 'Brazil']
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Hola a todes buen dia</h1>
+      <Lista>
+        
+            <li>
+              django
+            </li>
+            <li>
+              star wars
+            </li>
+      </Lista>
+
+      <ListaPais paises={paises} />
+
+      <ListaComida />
+
+    </>
+    
   );
 }
 
